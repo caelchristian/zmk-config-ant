@@ -354,10 +354,10 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp GRAVE       &kp Q          &kp W          &kp F           &kp P           &kp B        &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &kp MINUS
-&capsword_caps  &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp G        &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp SQT
-&shift_hyper    &btn 7 Z       &kp X          &kp C           &kp D           &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &btn 7 SLASH   &kp BACKSLASH
-                                              &lt 3 ESCAPE    &lt 1 SPACE     &lt 2 TAB    &lt 5 ENTER  &lt 4 BSPC      &lt 6 DELETE
+&kp TAB         &kp Q          &kp W          &kp F           &kp P                   &kp B        &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &kp MINUS
+&capsword_caps  &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHFT T          &kp G        &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp SQT
+&shift_hyper    &btn 7 Z       &kp X          &kp C           &kp D                   &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &btn 7 SLASH   &kp BACKSLASH
+                                              &lt 3 ESCAPE    &mt LEFT_COMMAND SPACE  &lt 2 TAB    &lt 5 ENTER  &lt 4 BSPC      &lt 6 DELETE
             >;
         };
 
@@ -372,10 +372,10 @@
 
         sym2 {
             bindings = <
-&none  &kp PERCENT      &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD     &kp AMPERSAND  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &none
-&none  &kp EXCLAMATION  &kp KP_MINUS   &kp KP_PLUS       &kp EQUAL          &kp POUND      &kp PIPE       &kp COLON     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &none
-&none  &kp CARET        &kp KP_SLASH   &kp KP_MULTIPLY   &kp BACKSLASH      &kp AT_SIGN    &kp TILDE      &kp DOLLAR    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH         &none
-                                       &none             &none              &none          &kp ENTER      &kp BSPC      &kp DELETE
+&none  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPERSAND         &kp UNDER              &kp UNDERSCORE    &kp SEMI           &none
+&none  &kp EXCLAMATION  &kp KP_MINUS  &kp KP_PLUS      &kp EQUAL      &kp POUND      &kp PIPE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none  &kp CARET        &kp KP_SLASH  &kp KP_MULTIPLY  &kp BACKSLASH  &kp AT_SIGN    &kp TILDE  &kp DOLLAR            &kp LEFT_BRACE         &kp RIGHT_BRACE   &kp SLASH          &none
+                                      &none            &none          &none          &kp ENTER  &kp BSPC              &kp DELETE
             >;
         };
 
