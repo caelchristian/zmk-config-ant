@@ -356,7 +356,7 @@
             bindings = <
 &kp TAB       &kp Q          &kp W          &kp F           &kp P                   &kp B        &kp J        &kp L                       &kp U           &kp Y          &kp SEMI       &kp EQUAL
 &to 2         &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHFT T          &kp G        &kp M        &hrm_r RSHFT N              &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp SQT
-&shift_hyper  &kp Z          &kp X          &kp C           &kp D                   &kp V        &kp K        &kp H                       &kp COMMA       &kp DOT        &kp SLASH      &kp MINUS
+&shift_hyper  &kp Z          &kp X          &kp C           &kp D                   &kp V        &kp K        &kp H                       &kp COMMA       &kp DOT        &kp SLASH      &lt 6 MINUS
                                             &lt 3 ESCAPE    &mt LEFT_COMMAND SPACE  &lt 1 TAB    &lt 4 ENTER  &mt LEFT_CONTROL BACKSPACE  &lt 6 DELETE
             >;
         };
@@ -408,10 +408,10 @@
 
         func {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8     &kp F9     &kp PSCRN          &none  &to_base    &to_extra  &to_tap   &trans    &trans
-&none  &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &none  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
-&none  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &to_func    &to_media  &kp RALT  &none     &none
-                        &kp K_APP  &kp SPACE  &kp TAB            &none  &none       &none
+&none  &kp F12  &kp F7  &kp F8     &kp F9     &kp PSCRN          &none  &to_base  &to_extra  &to_tap       &trans     &trans
+&none  &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &none  &none     &none      &kp UP_ARROW  &none      &none
+&none  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &to_func  &kp LEFT   &kp DOWN      &kp RIGHT  &none
+                        &kp K_APP  &kp SPACE  &kp TAB            &none  &none     &none
             >;
         };
 
