@@ -354,10 +354,10 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp GRAVE     &kp Q          &kp W          &kp F           &kp P                   &kp B        &kp J        &kp L                      &kp U           &kp Y          &kp SEMI       &kp EQUAL
-&to 5         &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHFT T          &kp G        &kp M        &hrm_r RSHFT N             &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp SQT
-&shift_hyper  &kp Z          &kp X          &kp C           &kp D                   &kp V        &kp K        &kp H                      &kp COMMA       &kp DOT        &kp SLASH      &lt 7 MINUS
-                                            &lt 3 ESC       &mt LEFT_COMMAND SPACE  &lt 1 TAB    &lt 2 ENTER  &mt RIGHT_SHIFT BACKSPACE  &lt 4 DELETE
+&kp GRAVE     &kp Q          &kp W          &kp F           &kp P           &kp B        &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &kp EQUAL
+&to 5         &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp G        &kp M        &hrm_r RSHFT N  &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp SQT
+&shift_hyper  &kp Z          &kp X          &kp C           &kp D           &kp V        &kp K        &kp H           &kp COMMA       &kp DOT        &kp SLASH      &lt 7 MINUS
+                                            &lt 3 ESC       &kp SPACE       &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE   &lt 4 DELETE
             >;
         };
 
@@ -370,12 +370,12 @@
             >;
         };
 
-        num+vim {
+        num+mods {
             bindings = <
-&kp TILDE  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT         &none  &to_base  &to_extra  &to_tap  &to_reset  &to_boot
-&kp GRAVE  &kp EQUAL  &kp N4  &kp N5      &kp N6  &kp PLUS         &kp H  &kp J     &kp K      &kp L    &kp COLON  &none
-&none      &kp COMMA  &kp N1  &kp N2      &kp N3  &kp BACKSLASH    &none  &to_num   &to_nav    &none    &none      &none
-                              &kp PERIOD  &kp N0  &kp MINUS        &none  &none     &none
+&kp TILDE  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT         &none  &to_base        &to_extra         &to_tap       &to_reset         &to_boot
+&kp GRAVE  &kp EQUAL  &kp N4  &kp N5      &kp N6  &kp PLUS         &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &none
+&none      &kp COMMA  &kp N1  &kp N2      &kp N3  &kp BACKSLASH    &none  &to_num         &to_nav           &none         &none             &none
+                              &kp PERIOD  &kp N0  &kp MINUS        &none  &none           &none
             >;
         };
 
@@ -391,7 +391,7 @@
         media+mouse {
             bindings = <
 &to_boot  &to_reset       &mmv MOVE_VERT 200  &to_extra        &to_base   &none       &none       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none         &none         &none
-&none     &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_RIGHT  &none      &none       &none       &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &none         &none         &none
+&none     &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_RIGHT  &none      &none       &kp H       &kp J              &kp K            &kp L         &none         &none
 &none     &none           &none               &to_func         &to_media  &none       &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                               &none            &mkp MB1   &mkp MB2    &kp C_STOP  &kp C_PLAY_PAUSE   &kp C_MUTE
             >;
