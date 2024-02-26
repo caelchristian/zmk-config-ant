@@ -75,64 +75,100 @@
             layers = <0 9 10>;
         };
 
-        to_home {
-            bindings = <&to 0>;
-            key-positions = <0 1>;
-            require-prior-idle-ms = <250>;
-        };
-
         equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <11 23>;
+            bindings = <&kp PLUS>;
+            key-positions = <11 10>;
             layers = <0 9 10>;
         };
 
         l_bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <20 32>;
+            key-positions = <20 19>;
             layers = <0 9 10>;
         };
 
         r_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <21 33>;
+            key-positions = <21 20>;
             layers = <0 9 10>;
-        };
-
-        l_bracket2 {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <2 3>;
-            layers = <6 6>;
-        };
-
-        r_bracket2 {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <3 4>;
-            layers = <6 6>;
         };
 
         l_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <14 15>;
-            layers = <6 6>;
+            layers = <0>;
         };
 
         r_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <15 16>;
-            layers = <6 6>;
+            layers = <0>;
         };
 
         l_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <26 27>;
-            layers = <6 6>;
+            layers = <0>;
         };
 
         r_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <27 28>;
-            layers = <6 6>;
+            layers = <0>;
+        };
+
+        exclaimation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 2>;
+            require-prior-idle-ms = <250>;
+        };
+
+        at {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <3 2>;
+            require-prior-idle-ms = <250>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <3 4>;
+            require-prior-idle-ms = <250>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 5>;
+            require-prior-idle-ms = <250>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 6>;
+            require-prior-idle-ms = <250>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <6 7>;
+            require-prior-idle-ms = <250>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <7 8>;
+            require-prior-idle-ms = <250>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <8 9>;
+            require-prior-idle-ms = <250>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <9 10>;
+            require-prior-idle-ms = <250>;
         };
     };
 
@@ -363,9 +399,9 @@
 
         sym {
             bindings = <
-&kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPERSAND         &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&capsword_caps  &kp EXCLAMATION  &kp KP_MINUS  &kp KP_PLUS      &kp EQUAL      &kp POUND      &kp PIPE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none
-&none           &kp CARET        &kp KP_SLASH  &kp KP_MULTIPLY  &kp BACKSLASH  &kp AT_SIGN    &kp TILDE  &kp DOLLAR            &kp LEFT_BRACE         &kp RIGHT_BRACE       &kp SLASH              &none
+&kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPERSAND         &kp ASTERISK           &none             &none              &none
+&capsword_caps  &kp PLUS         &kp KP_MINUS  &kp ASTERISK     &kp SLASH      &kp POUND      &kp PIPE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none           &none            &kp KP_SLASH  &kp KP_MULTIPLY  &kp BACKSLASH  &none          &kp TILDE  &kp DOLLAR            &kp LEFT_BRACE         &kp RIGHT_BRACE   &kp SLASH          &none
                                                &none            &none          &none          &kp ENTER  &kp BSPC              &kp DELETE
             >;
         };
