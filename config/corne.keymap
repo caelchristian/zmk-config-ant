@@ -354,10 +354,10 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp TAB           &kp Q                  &kp W          &kp F                  &kp P                   &kp B        &kp J        &kp L                      &kp U                   &kp Y               &kp SEMI                &kp EQUAL
-&kp LEFT_COMMAND  &hrm_l LEFT_CONTROL A  &hrm_l LALT R  &hrm_l LEFT_COMMAND S  &hrm_l LSHFT T          &kp G        &kp M        &hrm_r RSHFT N             &hrm_r RIGHT_COMMAND E  &hrm_r RIGHT_ALT I  &hrm_r RIGHT_CONTROL O  &kp SQT
-&to 3             &kp Z                  &kp X          &kp C                  &kp D                   &kp V        &kp K        &kp H                      &kp COMMA               &kp DOT             &kp SLASH               &kp MINUS
-                                                        &lt 4 ESC              &mt LEFT_COMMAND SPACE  &lt 1 TAB    &lt 2 ENTER  &mt RIGHT_SHIFT BACKSPACE  &kp DELETE
+&kp TAB           &kp Q                  &kp W          &kp F                  &kp P           &kp B        &kp J        &kp L                      &kp U                   &kp Y               &kp SEMI                &kp EQUAL
+&kp LEFT_COMMAND  &hrm_l LEFT_CONTROL A  &hrm_l LALT R  &hrm_l LEFT_COMMAND S  &hrm_l LSHFT T  &kp G        &kp M        &hrm_r RSHFT N             &hrm_r RIGHT_COMMAND E  &hrm_r RIGHT_ALT I  &hrm_r RIGHT_CONTROL O  &kp SQT
+&to 3             &kp Z                  &kp X          &kp C                  &kp D           &kp V        &kp K        &kp H                      &kp COMMA               &kp DOT             &kp SLASH               &kp MINUS
+                                                        &lt 4 ESC              &kp SPACE       &lt 1 TAB    &lt 2 ENTER  &mt RIGHT_SHIFT BACKSPACE  &kp DELETE
             >;
         };
 
@@ -390,10 +390,10 @@
 
         func+arrows {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8     &kp F9     &kp PSCRN          &none  &to_base        &kp UP_ARROW  &to_tap    &trans  &trans
-&none  &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &none  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none   &none
-&none  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &to_func        &none         &none      &none   &none
-                        &kp K_APP  &kp SPACE  &kp TAB            &none  &none           &none
+&none  &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN          &none  &kp PAGE_DOWN      &kp UP_ARROW     &kp PAGE_UP  &trans  &trans
+&none  &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK           &none  &kp LEFT_ARROW     &kp DOWN         &kp RIGHT    &none   &none
+&none  &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK    &none  &to_func           &none            &none        &none   &none
+                        &none   &kp SPACE  &kp TAB            &none  &kp K_SCROLL_DOWN  &kp K_SCROLL_UP
             >;
         };
 
