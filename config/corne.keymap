@@ -354,10 +354,10 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp TAB       &kp Q          &kp W          &kp F           &kp P                   &kp B        &kp J        &kp L                      &kp U           &kp Y          &kp SEMI       &kp EQUAL
-&to 3         &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHFT T          &kp G        &kp M        &hrm_r RSHFT N             &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp SQT
-&shift_hyper  &kp Z          &kp X          &kp C           &kp D                   &kp V        &kp K        &kp H                      &kp COMMA       &kp DOT        &kp SLASH      &lt 6 MINUS
-                                            &lt 4 ESC       &mt LEFT_COMMAND SPACE  &lt 1 TAB    &lt 2 ENTER  &mt RIGHT_SHIFT BACKSPACE  &kp DELETE
+&kp TAB           &kp Q          &kp W          &kp F           &kp P                   &kp B        &kp J        &kp L                      &kp U           &kp Y          &kp SEMI       &kp EQUAL
+&kp LEFT_COMMAND  &hrm_l LGUI A  &hrm_l LALT R  &hrm_l LCTRL S  &hrm_l LSHFT T          &kp G        &kp M        &hrm_r RSHFT N             &hrm_r RCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp SQT
+&shift_hyper      &kp Z          &kp X          &kp C           &kp D                   &kp V        &kp K        &kp H                      &kp COMMA       &kp DOT        &kp SLASH      &to 3
+                                                &lt 4 ESC       &mt LEFT_COMMAND SPACE  &lt 1 TAB    &lt 2 ENTER  &mt RIGHT_SHIFT BACKSPACE  &kp DELETE
             >;
         };
 
@@ -382,8 +382,8 @@
         QWERTY {
             bindings = <
 &trans  &kp Q                  &kp W          &kp E                  &kp R                &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&to 0   &hrm_l LEFT_COMMAND A  &hrm_r LALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z                  &kp X          &kp C                  &kp V                &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+&trans  &hrm_l LEFT_COMMAND A  &hrm_r LALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
+&trans  &kp Z                  &kp X          &kp C                  &kp V                &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &to 0
                                               &trans                 &trans               &trans    &trans  &trans  &trans
             >;
         };
