@@ -84,25 +84,25 @@
         l_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <20 19>;
-            layers = <0 9 10>;
+            layers = <10>;
         };
 
         r_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <21 20>;
-            layers = <0 9 10>;
+            layers = <10>;
         };
 
         l_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <14 15>;
-            layers = <0>;
+            layers = <6>;
         };
 
         r_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <15 16>;
-            layers = <0>;
+            layers = <6>;
         };
 
         l_brace {
