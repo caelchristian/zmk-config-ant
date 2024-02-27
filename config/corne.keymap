@@ -408,10 +408,10 @@
 
         num+vim {
             bindings = <
-&kp TILDE  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT         &none  &to_base  &to_extra  &to_tap  &to_reset  &to_boot
-&kp GRAVE  &kp EQUAL  &kp N4  &kp N5      &kp N6  &kp PLUS         &kp H  &kp J     &kp K      &kp L    &kp COLON  &none
-&none      &kp COMMA  &kp N1  &kp N2      &kp N3  &kp BACKSLASH    &none  &to_num   &to_nav    &none    &none      &none
-                              &kp PERIOD  &kp N0  &kp MINUS        &none  &none     &none
+&kp TILDE  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT         &none  &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &to_reset  &to_boot
+&kp GRAVE  &kp EQUAL  &kp N4  &kp N5      &kp N6  &kp PLUS         &none  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &none      &none
+&none      &kp COMMA  &kp N1  &kp N2      &kp N3  &kp BACKSLASH    &none  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2   &none      &none
+                              &kp PERIOD  &kp N0  &kp MINUS        &none  &none           &none
             >;
         };
 
