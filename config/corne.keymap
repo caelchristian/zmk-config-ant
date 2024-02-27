@@ -390,10 +390,10 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp LEFT_ALT  &kp Q                  &kp W          &kp F                    &kp P           &kp B        &kp J        &kp L           &kp U                   &kp Y               &kp SEMI                &kp EQUAL
-&shift_hyper  &hrm_l LEFT_CONTROL A  &hrm_l LALT R  &hrm_l LEFT_COMMAND S    &hrm_l LSHFT T  &kp G        &kp M        &hrm_r RSHFT N  &hrm_r RIGHT_COMMAND E  &hrm_r RIGHT_ALT I  &hrm_r RIGHT_CONTROL O  &kp SQT
-&to 3         &kp Z                  &kp X          &kp C                    &kp D           &kp V        &kp K        &kp H           &kp COMMA               &kp DOT             &kp SLASH               &kp MINUS
-                                                    &mt LEFT_COMMAND ESCAPE  &kp SPACE       &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE   &kp DELETE
+&kp GRAVE         &kp Q  &kp W  &kp F                &kp P      &kp B        &kp J        &kp L          &kp U         &kp Y    &kp SEMI   &kp EQUAL
+&kp LEFT_COMMAND  &kp A  &kp R  &kp S                &kp T      &kp G        &kp M        &kp N          &kp E         &kp I    &kp O      &mt LEFT_CONTROL APOS
+&kp LEFT_ALT      &kp Z  &kp X  &kp C                &kp D      &kp V        &kp K        &kp H          &kp COMMA     &kp DOT  &kp SLASH  &kp MINUS
+                                &mt LEFT_ALT ESCAPE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &shift_hyper
             >;
         };
 
