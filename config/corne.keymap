@@ -408,9 +408,9 @@
         sym {
             bindings = <
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp DOLLAR     &kp PERCENT    &kp CARET      &kp AMPERSAND         &kp ASTERISK           &kp EQUAL         &kp COLON          &none
-&none      &kp PLUS         &kp KP_MINUS  &kp ASTERISK     &kp SLASH      &kp POUND      &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
+&trans     &kp PLUS         &kp KP_MINUS  &kp ASTERISK     &kp SLASH      &kp POUND      &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
 &trans     &none            &kp KP_SLASH  &kp KP_MULTIPLY  &kp BACKSLASH  &none          &kp TILDE      &kp DOLLAR            &kp LEFT_BRACE         &kp RIGHT_BRACE   &kp BACKSLASH      &none
-                                          &trans           &trans         &none          &kp BACKSPACE  &kp LEFT_SHIFT        &kp DEL
+                                          &trans           &trans         &trans         &kp BACKSPACE  &kp LEFT_SHIFT        &kp DEL
             >;
         };
 
@@ -419,7 +419,7 @@
 &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp N7  &kp N8      &kp N9  &kp RIGHT_PARENTHESIS    &none       &bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 2     &bt BT_CLR_ALL
 &kp RIGHT_BRACKET  &kp PLUS              &kp N4  &kp N5      &kp N6  &kp SLASH                &none       &kp LEFT_SHIFT  &kp LEFT_GUI   &kp LEFT_ALT   &kp LEFT_CONTROL  &none
 &kp LEFT_ALT       &kp ASTRK             &kp N1  &kp N2      &kp N3  &kp BACKSLASH            &bt BT_PRV  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_NXT        &bt BT_CLR
-                                                 &kp PERIOD  &kp N0  &kp MINUS                &none       &none           &none
+                                                 &kp PERIOD  &kp N0  &kp MINUS                &trans      &none           &none
             >;
         };
 
