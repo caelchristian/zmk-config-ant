@@ -398,18 +398,18 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J        &kp L          &kp U                     &kp Y    &kp SEMI                 &to 3
-&kp LEFT_SHIFT  &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M        &kp N          &kp E                     &kp I    &kp O                    &mt RIGHT_SHIFT SQT
-&kp LEFT_ALT    &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K        &kp H          &kp COMMA                 &kp DOT  &mt RIGHT_CONTROL SLASH  &mt RIGHT_ALT MINUS
-                              &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &mt RIGHT_COMMAND DELETE
+&kp TAB         &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J        &kp L                       &kp U                     &kp Y    &kp SEMI   &to 3
+&kp LEFT_SHIFT  &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M        &kp N                       &kp E                     &kp I    &kp O      &mt RIGHT_SHIFT SQT
+&kp LEFT_ALT    &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K        &kp H                       &kp COMMA                 &kp DOT  &kp SLASH  &mt RIGHT_ALT MINUS
+                              &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &mt LEFT_CONTROL BACKSPACE  &mt RIGHT_COMMAND DELETE
             >;
         };
 
         sym {
             bindings = <
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH               &kp DOLLAR    &kp PERCENT      &kp SLASH     &kp N7         &kp N8        &kp N9        &kp PIPE       &kp DEL
-&trans     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp EQUAL     &kp CARET        &kp PLUS      &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp MINUS      &kp ENTER
-&trans     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp ASTERISK  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &none
+&trans     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp EQUAL     &kp CARET        &kp PLUS      &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp MINUS      &trans
+&trans     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp ASTERISK  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &trans
                                                &trans                 &trans        &trans           &kp N0        &kp BACKSPACE  &kp PERIOD
             >;
         };
