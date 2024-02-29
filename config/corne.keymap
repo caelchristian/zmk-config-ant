@@ -398,10 +398,10 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J                       &kp L           &kp U              &kp Y    &kp SEMI   &kp SINGLE_QUOTE
-&mo 2         &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M                       &kp N           &kp E              &kp I    &kp O      &kp ENTER
-&kp LEFT_ALT  &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K                       &kp H           &kp COMMA          &kp DOT  &kp SLASH  &mt RIGHT_ALT MINUS
-                            &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 TAB    &mt LEFT_CONTROL BACKSPACE  &kp LEFT_SHIFT  &kp RIGHT_COMMAND
+&kp TAB         &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J                       &kp L           &kp U                    &kp Y    &kp SEMI                 &kp SINGLE_QUOTE
+&kp LEFT_ALT    &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M                       &kp N           &kp E                    &kp I    &kp O                    &mo 2
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K                       &kp H           &kp COMMA                &kp DOT  &mt RIGHT_CONTROL SLASH  &mt RIGHT_ALT MINUS
+                              &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 TAB    &mt LEFT_CONTROL BACKSPACE  &kp LEFT_SHIFT  &mt RIGHT_COMMAND ENTER
             >;
         };
 
@@ -416,10 +416,10 @@
 
         func+arrows {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN          &none             &kp PAGE_DOWN   &kp UP_ARROW  &kp PAGE_UP   &trans      &bt BT_CLR_ALL
-&none  &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK           &none             &kp LEFT_ARROW  &kp DOWN      &kp RIGHT     &none       &bt BT_CLR_ALL
-&none  &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK    &bt BT_PRV        &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT  &kp LEFT_ALT
-                        &none   &kp SPACE  &kp TAB            &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp RGUI
+&none   &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN          &none       &kp PAGE_DOWN  &none         &kp PAGE_UP   &trans      &bt BT_CLR_ALL
+&trans  &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK           &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT     &none       &none
+&trans  &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK    &bt BT_PRV  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT  &none
+                         &trans  &kp SPACE  &kp TAB            &trans      &trans         &trans
             >;
         };
 
