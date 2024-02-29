@@ -99,13 +99,13 @@
         l_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <14 15>;
-            layers = <5>;
+            layers = <3>;
         };
 
         r_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <15 16>;
-            layers = <5>;
+            layers = <3>;
         };
 
         l_brace {
@@ -313,21 +313,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TO_NUM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 5>;
+            bindings = <&none>, <&to 3>;
         };
 
         to_sym: to_sym {
             compatible = "zmk,behavior-tap-dance";
             label = "TO_SYM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 5>;
+            bindings = <&none>, <&to 3>;
         };
 
         to_func: to_func {
             compatible = "zmk,behavior-tap-dance";
             label = "TO_FUNC";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 5>;
+            bindings = <&none>, <&to 3>;
         };
 
         shift_hyper: shift_hyper {
@@ -398,19 +398,37 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp F                    &kp P      &kp B          &kp J                       &kp L           &kp U      &kp Y    &kp SEMI   &kp SQT
-&kp LEFT_CONTROL  &kp A  &kp R  &kp S                    &kp T      &kp G          &kp M                       &kp N           &kp E      &kp I    &kp O      &kp ENTER
-&kp LEFT_ALT      &kp Z  &kp X  &kp C                    &kp D      &kp V          &kp K                       &kp H           &kp COMMA  &kp DOT  &kp SLASH  &kp MINUS
-                                &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 ENTER    &mt LEFT_CONTROL BACKSPACE  &kp LEFT_SHIFT  &lt 4 DEL
+&kp TAB       &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J                       &kp L           &kp U              &kp Y    &kp SEMI   &kp SINGLE_QUOTE
+&mo 2         &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M                       &kp N           &kp E              &kp I    &kp O      &kp ENTER
+&kp LEFT_ALT  &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K                       &kp H           &kp COMMA          &kp DOT  &kp SLASH  &mt RIGHT_ALT MINUS
+                            &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 TAB    &mt LEFT_CONTROL BACKSPACE  &kp LEFT_SHIFT  &kp RIGHT_COMMAND
             >;
         };
 
         sym {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH               &kp DOLLAR    &kp PERCENT      &kp LEFT_BRACE  &kp N7          &kp N8        &kp N9        &kp RIGHT_BRACE  &none
-&trans     &kp PLUS         &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp EQUAL     &kp CARET        &kp PLUS        &kp NUMBER_4    &kp N5        &kp NUMBER_6  &kp MINUS        &kp ENTER
-&trans     &kp MINUS        &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp TILDE       &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH    &none
-                                               &trans                 &trans        &trans           &kp BACKSPACE   &kp LEFT_SHIFT  &kp DEL
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH               &kp DOLLAR    &kp PERCENT      &kp SLASH      &kp N7        &kp N8        &kp N9        &kp PIPE       &none
+&trans     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp EQUAL     &kp CARET        &kp PLUS       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS      &kp ENTER
+&trans     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp ASTERISK   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &none
+                                               &trans                 &trans        &trans           &kp BACKSPACE  &kp N0        &kp PERIOD
+            >;
+        };
+
+        func+arrows {
+            bindings = <
+&none  &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN          &none             &kp PAGE_DOWN   &kp UP_ARROW  &kp PAGE_UP   &trans      &bt BT_CLR_ALL
+&none  &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK           &none             &kp LEFT_ARROW  &kp DOWN      &kp RIGHT     &none       &bt BT_CLR_ALL
+&none  &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK    &bt BT_PRV        &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT  &kp LEFT_ALT
+                        &none   &kp SPACE  &kp TAB            &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp RGUI
+            >;
+        };
+
+        sym_old {
+            bindings = <
+&kp TILDE          &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK      &kp LPAR               &kp RIGHT_BRACE    &none  &to_base    &to_extra  &to_tap   &to_reset  &to_boot
+&kp DOUBLE_QUOTES  &colon_semi     &kp DOLLAR       &kp PERCENT       &kp CARET              &plus_equal        &none  &kp RSHIFT  &kp RCTRL  &kp LALT  &kp LGUI   &none
+&none              &kp LT          &kp EXCLAMATION  &kp AT_SIGN       &kp POUND              &kp PIPE           &none  &to_sym     &to_sym2   &kp RALT  &none      &none
+                                                    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none       &none
             >;
         };
 
@@ -429,24 +447,6 @@
 &trans  &hrm_l LEFT_COMMAND A  &hrm_r LALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
 &to 0   &kp Z                  &kp X          &kp C                  &kp V                &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &none
                                               &trans                 &trans               &trans    &trans  &trans  &trans
-            >;
-        };
-
-        func+arrows {
-            bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN          &none  &kp PAGE_DOWN   &kp UP_ARROW  &kp PAGE_UP  &trans  &trans
-&none  &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK           &none  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT    &none   &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK    &none  &to_func        &none         &none        &none   &none
-                        &none   &kp SPACE  &kp TAB            &none  &none           &none
-            >;
-        };
-
-        sym_old {
-            bindings = <
-&kp TILDE          &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK      &kp LPAR               &kp RIGHT_BRACE    &none  &to_base    &to_extra  &to_tap   &to_reset  &to_boot
-&kp DOUBLE_QUOTES  &colon_semi     &kp DOLLAR       &kp PERCENT       &kp CARET              &plus_equal        &none  &kp RSHIFT  &kp RCTRL  &kp LALT  &kp LGUI   &none
-&none              &kp LT          &kp EXCLAMATION  &kp AT_SIGN       &kp POUND              &kp PIPE           &none  &to_sym     &to_sym2   &kp RALT  &none      &none
-                                                    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none       &none
             >;
         };
 
@@ -473,7 +473,7 @@
 &kp GRAVE       &kp Q          &kp W          &kp E           &kp R            &kp T         &kp Y         &kp U           &kp I           &kp O          &kp P                  &kp MINUS
 &capsword_caps  &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LSHIFT F  &kp G         &kp H         &hrm_r LSHFT J  &hrm_r LCTRL K  &hrm_r LALT L  &hrm_r LGUI SEMICOLON  &kp SQT
 &shift_hyper    &btn 8 Z       &kp X          &kp C           &kp V            &kp B         &kp N         &kp M           &kp COMMA       &kp PERIOD     &btn 8 SLASH           &kp BACKSLASH
-                                              &btn 7 ESC      &btn 0 SPACE     &btn 1 TAB    &btn 5 ENTER  &btn 5 BSPC     &btn 5 DELETE
+                                              &btn 7 ESC      &btn 0 SPACE     &btn 1 TAB    &btn 3 ENTER  &btn 3 BSPC     &btn 3 DELETE
             >;
 
             label = "qwerty_layout";
