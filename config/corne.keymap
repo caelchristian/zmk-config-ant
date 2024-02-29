@@ -99,13 +99,13 @@
         l_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <14 15>;
-            layers = <3>;
+            layers = <4>;
         };
 
         r_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <15 16>;
-            layers = <3>;
+            layers = <4>;
         };
 
         l_brace {
@@ -313,21 +313,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TO_NUM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 3>;
+            bindings = <&none>, <&to 4>;
         };
 
         to_sym: to_sym {
             compatible = "zmk,behavior-tap-dance";
             label = "TO_SYM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 3>;
+            bindings = <&none>, <&to 4>;
         };
 
         to_func: to_func {
             compatible = "zmk,behavior-tap-dance";
             label = "TO_FUNC";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 3>;
+            bindings = <&none>, <&to 4>;
         };
 
         shift_hyper: shift_hyper {
@@ -398,9 +398,9 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J        &kp L          &kp U                     &kp Y    &kp SEMI                 &kp KP_EQUAL
-&kp LEFT_SHIFT  &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M        &kp N          &kp E                     &kp I    &kp O                    &mt RIGHT_ALT SQT
-&kp LEFT_ALT    &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K        &kp H          &kp COMMA                 &kp DOT  &mt RIGHT_CONTROL SLASH  &mt RIGHT_SHIFT MINUS
+&kp TAB         &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J        &kp L          &kp U                     &kp Y    &kp SEMI                 &to 3
+&kp LEFT_SHIFT  &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M        &kp N          &kp E                     &kp I    &kp O                    &mt RIGHT_SHIFT SQT
+&kp LEFT_ALT    &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K        &kp H          &kp COMMA                 &kp DOT  &mt RIGHT_CONTROL SLASH  &mt RIGHT_ALT MINUS
                               &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &mt RIGHT_COMMAND DELETE
             >;
         };
@@ -423,6 +423,15 @@
             >;
         };
 
+        QWERTY {
+            bindings = <
+&trans  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &to 0
+&trans  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
+&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &none
+                      &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
         sym_old {
             bindings = <
 &kp TILDE          &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK      &kp LPAR               &kp RIGHT_BRACE    &none  &to_base    &to_extra  &to_tap   &to_reset  &to_boot
@@ -438,15 +447,6 @@
 &kp RIGHT_BRACKET  &kp PLUS              &kp N4  &kp N5      &kp N6  &kp SLASH                &none       &kp LEFT_SHIFT  &kp LEFT_GUI   &kp LEFT_ALT   &kp LEFT_CONTROL  &none
 &kp LEFT_ALT       &kp ASTRK             &kp N1  &kp N2      &kp N3  &kp BACKSLASH            &bt BT_PRV  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_NXT        &bt BT_CLR
                                                  &kp PERIOD  &kp N0  &kp MINUS                &trans      &none           &none
-            >;
-        };
-
-        QWERTY {
-            bindings = <
-&trans  &kp Q                  &kp W          &kp E                  &kp R                &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&trans  &hrm_l LEFT_COMMAND A  &hrm_r LALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&to 0   &kp Z                  &kp X          &kp C                  &kp V                &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &none
-                                              &trans                 &trans               &trans    &trans  &trans  &trans
             >;
         };
 
@@ -473,7 +473,7 @@
 &kp GRAVE       &kp Q          &kp W          &kp E           &kp R            &kp T         &kp Y         &kp U           &kp I           &kp O          &kp P                  &kp MINUS
 &capsword_caps  &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LSHIFT F  &kp G         &kp H         &hrm_r LSHFT J  &hrm_r LCTRL K  &hrm_r LALT L  &hrm_r LGUI SEMICOLON  &kp SQT
 &shift_hyper    &btn 8 Z       &kp X          &kp C           &kp V            &kp B         &kp N         &kp M           &kp COMMA       &kp PERIOD     &btn 8 SLASH           &kp BACKSLASH
-                                              &btn 7 ESC      &btn 0 SPACE     &btn 1 TAB    &btn 3 ENTER  &btn 3 BSPC     &btn 3 DELETE
+                                              &btn 7 ESC      &btn 0 SPACE     &btn 1 TAB    &btn 4 ENTER  &btn 4 BSPC     &btn 4 DELETE
             >;
 
             label = "qwerty_layout";
