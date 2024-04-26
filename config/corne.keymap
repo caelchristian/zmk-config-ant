@@ -21,91 +21,91 @@
         num1 {
             bindings = <&kp N1>;
             key-positions = <1 13>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         num2 {
             bindings = <&kp N2>;
             key-positions = <2 14>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         num3 {
             bindings = <&kp N3>;
             key-positions = <3 15>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         num4 {
             bindings = <&kp N4>;
             key-positions = <4 16>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         num5 {
             bindings = <&kp N5>;
             key-positions = <5 17>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         num6 {
             bindings = <&kp N6>;
             key-positions = <6 18>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         num7 {
             bindings = <&kp N7>;
             key-positions = <7 19>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         num8 {
             bindings = <&kp N8>;
             key-positions = <8 20>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         num9 {
             bindings = <&kp N9>;
             key-positions = <9 21>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         num0 {
             bindings = <&kp N0>;
             key-positions = <10 22>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         equal {
             bindings = <&kp PLUS>;
             key-positions = <11 10>;
-            layers = <0 8 9>;
+            layers = <0 7 8>;
         };
 
         l_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <20 19>;
-            layers = <9>;
+            layers = <8>;
         };
 
         r_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <21 20>;
-            layers = <9>;
+            layers = <8>;
         };
 
         l_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <14 15>;
-            layers = <4>;
+            layers = <3>;
         };
 
         r_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <15 16>;
-            layers = <4>;
+            layers = <3>;
         };
 
         l_brace {
@@ -271,21 +271,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_TO_EXTRA";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 8>;
+            bindings = <&none>, <&to 7>;
         };
 
         to_tap: to_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_TO_TAP_LAYER";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 9>;
+            bindings = <&none>, <&to 8>;
         };
 
         to_button: to_button {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_TO_BUTTON";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 8>;
+            bindings = <&none>, <&to 7>;
         };
 
         to_nav: to_nav {
@@ -306,28 +306,28 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TO_MEDIA";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 7>;
+            bindings = <&none>, <&to 6>;
         };
 
         to_num: to_num {
             compatible = "zmk,behavior-tap-dance";
             label = "TO_NUM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 4>;
+            bindings = <&none>, <&to 3>;
         };
 
         to_sym: to_sym {
             compatible = "zmk,behavior-tap-dance";
             label = "TO_SYM";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 4>;
+            bindings = <&none>, <&to 3>;
         };
 
         to_func: to_func {
             compatible = "zmk,behavior-tap-dance";
             label = "TO_FUNC";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 4>;
+            bindings = <&none>, <&to 3>;
         };
 
         shift_hyper: shift_hyper {
@@ -398,37 +398,28 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J        &kp L                       &kp U                     &kp Y    &kp SEMI   &to 3
-&kp LEFT_SHIFT  &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M        &kp N                       &kp E                     &kp I    &kp O      &mt RIGHT_SHIFT SQT
-&kp LEFT_ALT    &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K        &kp H                       &kp COMMA                 &kp DOT  &kp SLASH  &mt RIGHT_ALT MINUS
-                              &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &mt LEFT_CONTROL BACKSPACE  &mt RIGHT_COMMAND DELETE
+&kp TAB           &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J        &kp L          &kp U           &kp Y    &kp SEMI   &kp DEL
+&kp LEFT_COMMAND  &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M        &kp N          &kp E           &kp I    &kp O      &mt LEFT_CONTROL SQT
+&kp LEFT_ALT      &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K        &kp H          &kp COMMA       &kp DOT  &kp SLASH  &mt RIGHT_ALT MINUS
+                                &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp LEFT_SHIFT
             >;
         };
 
         sym {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH               &kp DOLLAR    &kp PERCENT      &kp SLASH     &kp N7         &kp N8        &kp N9        &kp PIPE       &kp DEL
-&trans     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp EQUAL     &kp CARET        &kp PLUS      &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp MINUS      &trans
-&trans     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp AMPERSAND    &kp ASTERISK  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &trans
-                                               &trans                 &trans        &trans           &kp N0        &kp BACKSPACE  &kp PERIOD
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH               &kp DOLLAR      &kp PERCENT      &kp SLASH     &kp N7         &kp N8        &kp N9        &kp PIPE       &kp DEL
+&trans     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp EQUAL       &kp CARET        &kp PLUS      &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp MINUS      &trans
+&trans     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp AMPERSAND    &kp ASTERISK  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &trans
+                                               &trans                 &trans          &trans           &kp N0        &kp BACKSPACE  &kp PERIOD
             >;
         };
 
         func+arrows {
             bindings = <
-&none   &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN          &none       &kp PAGE_DOWN  &none         &kp PAGE_UP   &trans      &bt BT_CLR_ALL
-&trans  &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK           &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT     &none       &none
-&trans  &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK    &bt BT_PRV  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT  &none
-                         &trans  &kp SPACE  &kp TAB            &trans      &trans         &trans
-            >;
-        };
-
-        QWERTY {
-            bindings = <
-&trans  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &to 0
-&trans  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &none
-                      &trans  &trans  &trans    &trans  &trans  &trans
+&bt BT_PRV    &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN          &none     &kp PAGE_DOWN  &none         &kp PAGE_UP  &trans           &bt BT_CLR_ALL
+&bt BT_NXT    &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK           &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT    &kp RIGHT_SHIFT  &none
+&bt BT_SEL 0  &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK    &none     &none          &none         &none        &none            &none
+                               &trans  &kp SPACE  &kp TAB            &trans    &trans         &trans
             >;
         };
 
@@ -472,8 +463,8 @@
             bindings = <
 &kp GRAVE       &kp Q          &kp W          &kp E           &kp R            &kp T         &kp Y         &kp U           &kp I           &kp O          &kp P                  &kp MINUS
 &capsword_caps  &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LSHIFT F  &kp G         &kp H         &hrm_r LSHFT J  &hrm_r LCTRL K  &hrm_r LALT L  &hrm_r LGUI SEMICOLON  &kp SQT
-&shift_hyper    &btn 8 Z       &kp X          &kp C           &kp V            &kp B         &kp N         &kp M           &kp COMMA       &kp PERIOD     &btn 8 SLASH           &kp BACKSLASH
-                                              &btn 7 ESC      &btn 0 SPACE     &btn 1 TAB    &btn 4 ENTER  &btn 4 BSPC     &btn 4 DELETE
+&shift_hyper    &btn 7 Z       &kp X          &kp C           &kp V            &kp B         &kp N         &kp M           &kp COMMA       &kp PERIOD     &btn 7 SLASH           &kp BACKSLASH
+                                              &btn 6 ESC      &btn 0 SPACE     &btn 1 TAB    &btn 3 ENTER  &btn 3 BSPC     &btn 3 DELETE
             >;
 
             label = "qwerty_layout";
