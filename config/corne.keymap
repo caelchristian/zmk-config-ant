@@ -235,10 +235,10 @@
             //                    | ESC | SPC | TAB |   | ENT | BKSP | DEL |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J        &kp L          &kp U           &kp Y    &kp SEMI   &kp DEL
-&kp LEFT_CONTROL  &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M        &kp N          &kp E           &kp I    &kp O      &mt LEFT_CONTROL SQT
-&kp LEFT_ALT      &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K        &kp H          &kp COMMA       &kp DOT  &kp SLASH  &mt RIGHT_ALT MINUS
-                                &mt LEFT_COMMAND ESCAPE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp LEFT_SHIFT
+&kp TAB       &kp Q  &kp W  &kp F                    &kp P      &kp B        &kp J        &kp L          &kp U           &kp Y    &kp SEMI   &kp DEL
+&kp LEFT_GUI  &kp A  &kp R  &kp S                    &kp T      &kp G        &kp M        &kp N          &kp E           &kp I    &kp O      &mt LEFT_CONTROL SQT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C                    &kp D      &kp V        &kp K        &kp H          &kp COMMA       &kp DOT  &kp SLASH  &mt RIGHT_ALT MINUS
+                            &mt LEFT_CONTROL ESCAPE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp LEFT_SHIFT
             >;
         };
 
