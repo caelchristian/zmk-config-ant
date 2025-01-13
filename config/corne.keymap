@@ -209,19 +209,6 @@
 
             label = "SHIFTKEY_PRESS_WITH_LEFT_SHIFT_MODIFIER";
         };
-
-        as: autoshift {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &macro_param_1to2 &autoshft MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &macro_param_1to2 &autoshft MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
-
-            label = "AUTOSHIFT_KEYPRESS";
-        };
     };
 
     keymap {
@@ -247,7 +234,7 @@
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH               &kp DOLLAR      &kp PERCENT      &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &kp PIPE   &kp DEL
 &trans     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp EQUAL       &kp CARET        &kp PLUS       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &trans
 &trans     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp AMPERSAND    &kp ASTERISK   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &trans
-                                               &trans                 &trans          &trans           &kp ENTER      &kp N0        &kp PERIOD
+                                               &trans                 &trans          &trans           &trans         &kp N0        &kp PERIOD
             >;
         };
 
@@ -256,16 +243,16 @@
 &bt BT_PRV    &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN          &none     &kp PAGE_DOWN  &kp PG_UP     &none      &trans           &bt BT_CLR_ALL
 &bt BT_NXT    &kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK           &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp RIGHT_SHIFT  &none
 &bt BT_SEL 0  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none     &none          &none         &none      &none            &none
-                               &trans  &trans  &kp TAB            &trans    &trans         &trans
+                               &trans  &trans  &trans             &trans    &trans         &trans
             >;
         };
 
         hyper {
             bindings = <
-&trans  &trans  &trans  &trans                 &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LS(LG(LA(LC(S))))  &kp LS(LA(LG(LC(T))))  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                 &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans                 &trans                 &trans    &trans  &trans  &trans
+&kp TAB  &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LG(LC(W))))  &kp LS(LA(LG(LC(F))))  &kp LS(LA(LC(LG(P))))  &kp LS(LG(LA(LC(B))))    &kp LS(LA(LC(LG(J))))  &kp LS(LG(LC(LA(L))))  &kp LS(LA(LC(LG(U))))      &kp LS(LA(LC(LG(Y))))    &kp LA(LC(LG(LS(SEMI))))  &trans
+&trans   &kp LS(LC(LA(LG(A))))  &kp LA(LG(LC(LS(R))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(T))))  &kp LS(LC(LG(LA(G))))    &kp LS(LC(LG(LA(M))))  &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(E))))      &kp LS(LG(LC(LA(I))))    &kp LS(LG(LA(LC(O))))     &kp APOS
+&trans   &kp LS(LA(LC(LG(Z))))  &kp LG(LC(LA(LS(X))))  &kp LG(LC(LS(LA(C))))  &kp LG(LC(LS(LA(D))))  &kp LG(LS(LC(LA(V))))    &kp LG(LC(LA(LS(K))))  &kp LG(LC(LA(LS(H))))  &kp LC(LS(LA(LG(COMMA))))  &kp LG(LC(LA(LS(DOT))))  &kp LG(LC(LS(LA(FSLH))))  &trans
+                                                       &trans                 &trans                 &trans                   &trans                 &trans                 &trans
             >;
         };
 
