@@ -60,12 +60,12 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <19>;
+            key-positions = <33 32>;
         };
 
         dash {
             bindings = <&kp MINUS>;
-            key-positions = <17 16>;
+            key-positions = <26 27>;
         };
     };
 
