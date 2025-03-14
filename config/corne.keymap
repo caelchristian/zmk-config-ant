@@ -85,6 +85,16 @@
             bindings = <&kp MINUS>;
             key-positions = <26 27>;
         };
+
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <27 15>;
+        };
+
+        paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <16 28>;
+        };
     };
 
     behaviors {
@@ -293,9 +303,9 @@
 
             bindings = <
 &kp GRAVE             &kp Q             &kp W               &kp F           &kp P               &kp B        &kp J        &kp L                &kp U            &kp Y                &kp MINUS          &kp EQUAL
-&lt 4 ESCAPE          &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_COMMAND T  &kp G        &kp M        &mt RIGHT_COMMAND N  &mt RIGHT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT O  &mt LEFT_COMMAND SQT
+&lt 4 ESCAPE          &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_COMMAND T  &kp G        &kp M        &mt RIGHT_COMMAND N  &mt RIGHT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT O  &kp SQT
 &kp NON_US_BACKSLASH  &kp Z             &kp X               &kp C           &kp D               &kp V        &kp K        &kp H                &kp COMMA        &kp DOT              &kp SLASH          &kp SEMICOLON
-                                                            &caps_word      &kp SPACE           &lt 1 TAB    &lt 2 ENTER  &sk LEFT_SHIFT       &kp BACKSPACE
+                                                            &caps_word      &kp SPACE           &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE        &sk LEFT_SHIFT
             >;
         };
 
@@ -312,7 +322,7 @@
             bindings = <
 &bt BT_PRV    &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN          &none     &kp PAGE_DOWN  &kp PG_UP     &none      &trans           &bt BT_CLR_ALL
 &bt BT_NXT    &kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK           &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp RIGHT_SHIFT  &none
-&bt BT_SEL 0  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none     &tog 5         &tog 0        &none      &none            &none
+&bt BT_SEL 0  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none     &none          &none         &none      &none            &none
                                &trans  &trans  &trans             &trans    &trans         &trans
             >;
         };
