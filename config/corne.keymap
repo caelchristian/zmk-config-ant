@@ -136,9 +136,14 @@
             key-positions = <8 20>;
         };
 
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <9 21>;
+        };
+
         asterisk {
             bindings = <&kp ASTERISK>;
-            key-positions = <9 21>;
+            key-positions = <10 22>;
         };
     };
 
