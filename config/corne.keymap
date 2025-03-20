@@ -38,12 +38,12 @@
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <2 1>;
+            key-positions = <2 4>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <9 10>;
+            key-positions = <9 7>;
         };
 
         left_square_bracket {
@@ -68,7 +68,7 @@
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <28 16>;
+            key-positions = <16 28>;
         };
 
         equals {
@@ -78,22 +78,67 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <7 19>;
+            key-positions = <19 18>;
         };
 
         dash {
             bindings = <&kp MINUS>;
-            key-positions = <16 4>;
+            key-positions = <16 17>;
         };
 
         copy {
             bindings = <&kp LG(C)>;
-            key-positions = <14 26>;
+            key-positions = <27 28>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
-            key-positions = <15 27>;
+            key-positions = <29 28>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <32 33>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <33 34>;
+        };
+
+        exclaimation {
+            bindings = <&kp EXCL>;
+            key-positions = <1 13>;
+        };
+
+        at {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <14 2>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <15 3>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <16 4>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <7 19>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <8 20>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <9 21>;
         };
     };
 
